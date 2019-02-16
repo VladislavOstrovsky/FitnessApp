@@ -1,0 +1,57 @@
+.container {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.home-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    background-color: #EDF1D2;
+}
+
+.app-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 12em;
+}
+
+.app-header .app-logo {
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.app-header .app-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.app-header .app-banner {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 240px;
+    height: 140px;
+}
+
+.app-header .app-banner img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.5em;
+}
+
+.app-header .app-user-info-block {
+    margin-right: 40px;
+}

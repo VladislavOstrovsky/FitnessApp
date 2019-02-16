@@ -18,15 +18,22 @@ class ProductList extends Component {
     render() {
         const { products } = this.props;
         return (
-            <ul className="product-list">
-                {
-                    products.map((products) => {
-                        return (
-                            <li key={products.id}><ProductListItem product={products}/></li>
-                        );
-                    })
-                }
-            </ul>
+            <div className="products">
+                <h1 className="product-title">Товары</h1>
+                
+                <ul className="product-list">
+                    {
+                        products.map((products) => {
+                            return (
+                                <div className="product-list-i">
+                                    <li key={products.id}><ProductListItem product={products}/></li>  
+                                </div>
+                            );
+                        })
+                    }
+                </ul>
+            </div>
+            
         );
     }
 };
