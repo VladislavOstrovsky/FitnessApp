@@ -1,17 +1,20 @@
 import React from 'react';
-import ProductList from '../product-list';
-import ShoppingCartTable from '../shopping-cart-table/shopping-cart-table';
 import AppHeader from '../app-header/app-header';
 import SideBar from "../menu-burger/menu-burger";
+import HomePageCard from '../home-page-card/home-page-card';
 
 const HomePage = () => {
     return (
-         <div id="App" className="ads">
+         <div id="App">
             <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
             <div id="page-wrap" className="home-content">
                 <AppHeader />
-                <ProductList />
-                <ShoppingCartTable />
+                <div className="cards-pages">
+                    <HomePageCard />
+                    <HomePageCard />
+                    <HomePageCard />
+                </div>
+                
             </div>
          </div>
     );

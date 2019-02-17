@@ -8,14 +8,15 @@ const CartPage = () => {
     
     return (
         <div>
-            <div id="App" className="ads">
+            <div id="App">
             <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
             <div id="page-wrap" className="home-content"></div>
                 <ShopHeader numItems={5} total={300}/>
                 <ProductList />
                 <ShoppingCartTable />
             </div>
-        </div>);
+        </div>
+    );
 };
 
 export default CartPage;
